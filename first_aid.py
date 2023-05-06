@@ -1,3 +1,7 @@
+# TO-DO:
+# Add code fo CPR, Choking, and Burns
+# Add a dictionary function which counts who completed the different sections completely
+
 def first_aid_game():
     print("")
     print("Welcome to the First Aid Test! We will now see if you are qualified.")
