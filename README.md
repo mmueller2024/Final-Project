@@ -1,3 +1,3 @@
-## Matthew Mueller
-# Final Project
-# This is a group of small interactive games
+#### Matthew Mueller 
+# Computer Science Final Project
+## This is a group of small interactive games
