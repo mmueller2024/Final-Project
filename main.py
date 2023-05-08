@@ -10,7 +10,6 @@ def main():
     print("Choose your game:")
     print("- Adventure Game (input 'adventure')")
     print("- First Aid Test (input 'first aid')")
-    print("- Something else I havent decided yet") #update this!!!
     print("")
     user_input = input()
     if user_input == "adventure": #has work to be done
