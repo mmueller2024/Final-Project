@@ -35,4 +35,4 @@ def first_aid_game():
             print("After your ex recovered, they skinned you alive with a potato peeler and then ran you over with their 18 wheeler.")
             print("")
                 
-first_aid_game()
+#first_aid_game()
