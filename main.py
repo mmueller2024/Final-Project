@@ -1,5 +1,6 @@
 import random
 
+from time import sleep
 from first_aid import first_aid_game
 from adventure import adventure_game
 
