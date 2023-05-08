@@ -142,7 +142,7 @@ def adventure_game():
             print("")
             print("Achievement Unlocked: 'Lit Disco Party'")
         else:
-            print("xxxxxxxxx")
+            print("xxxxxxxxx") # ADD STUFF HERE FOR THE FOREST STORYLINE
 
 
 
