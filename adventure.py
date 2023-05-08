@@ -146,4 +146,4 @@ def adventure_game():
 
 
 
-adventure_game()
+#adventure_game()
