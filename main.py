@@ -22,9 +22,11 @@ def main():
         print("")
         print("There are five possible achievements to unlock:")
         print("'Fishfood', 'Amelia Earhart', 'Lit Disco Party', 'Best Friends', 'Yummy Dinner', and 'Find Microwave'")
+        print("")
         with open ("achievements.json", "r") as f:
             achievements = json.load(f)
         print(achievements)
+        print("")
     else:
         print("")
         print("unknown input, try again")
