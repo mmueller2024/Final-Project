@@ -74,7 +74,7 @@ def adventure_game():
                     print("")
                     fishfood_name = input("Please enter your name:" )
                     fishfood_dict = {
-                        fishfood_name:"Fishfood"
+                        "Name: " + fishfood_name:"Achievement: Fishfood"
                     }
                     with open("achievements.json", "w") as f:
                         json.dump(fishfood_dict, f)
@@ -94,7 +94,7 @@ def adventure_game():
                     print("")
                     amelia_name = input("Please enter your name: ")
                     amelia_dict = {
-                        amelia_name:"Amelia Earhart"
+                        "Name: " + amelia_name:"Achievement: Amelia Earhart"
                     }
                     with open("achievements.json", "w") as f:
                         json.dump(amelia_dict, f)
@@ -157,7 +157,7 @@ def adventure_game():
             print("")
             disco_name = input("Please enter your name:" )
             disco_dict = {
-                disco_name:"Lit Disco Party"
+                "Name: " + disco_name:"Achievement: Lit Disco Party"
             }
             with open("achievements.json", "w") as f:
                 json.dump(disco_dict, f)
@@ -172,7 +172,18 @@ def adventure_game():
                 random_dog = random.randint(1,10)
                 if random_dog == 5:
                     dog = 0
-                else: dog = 1
+                else:
+                    dog = 1
+                print("")
+                print("Achievement Unlocked: 'Best Friends'")
+                print("")
+                dog_name = input("Please enter your name: " )
+                dog_dict = {
+                    "Name: " + dog_name:"Achievement: Best Friends"
+                }
+                with open("achievements.json", "w") as f:
+                    json.dump(dog_dict, f)
+                print("")
             else:
                 dog = 0
             print("")
@@ -212,7 +223,7 @@ def adventure_game():
                 print("")
                 dinner_name = input("Please enter your name: " )
                 dinner_dict = {
-                    dinner_name:"Yummy Dinner"
+                    "Name: " + dinner_name:"Achievement: Yummy Dinner"
                 }
                 with open("achievements.json", "w") as f:
                     json.dump(dinner_dict, f)
@@ -227,7 +238,7 @@ def adventure_game():
                 print("")
                 microwave_name = input("Please enter your name: " )
                 microwave_dict = {
-                    microwave_name:"Find Microwave"
+                    "Name: " + microwave_name:"Achievement: Find Microwave"
                 }
                 with open("achievements.json", "w") as f:
                     json.dump(microwave_dict, f)

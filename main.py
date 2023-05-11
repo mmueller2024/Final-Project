@@ -11,15 +11,25 @@ def main():
     print("Choose your game:")
     print("- Adventure Game (input 'adventure')")
     print("- First Aid Test (input 'first aid')")
+    print("- See Adventure Achievements (input 'achievements')")
     print("")
     user_input = input()
     if user_input == "adventure": #has work to be done
         adventure_game()
     if user_input == "first aid": #has work to be done
         first_aid_game()
+    if user_input == "achievements":
+        print("")
+        print("There are five possible achievements to unlock:")
+        print("'Fishfood', 'Amelia Earhart', 'Lit Disco Party', 'Best Friends', 'Yummy Dinner', and 'Find Microwave'")
+        with open ("achievements.json", "r") as f:
+            achievements = json.load(f)
+        print(achievements)
     else:
         print("")
         print("unknown input, try again")
         print("")
 
 main()
+
+
