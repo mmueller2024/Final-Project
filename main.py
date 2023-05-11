@@ -1,4 +1,5 @@
 import random
+import json
 
 from time import sleep
 from first_aid import first_aid_game

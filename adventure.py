@@ -1,5 +1,6 @@
 import random
 from time import sleep
+import json
 
 def death_message():
     message = random.randint(1, 10)
@@ -71,9 +72,13 @@ def adventure_game():
                     sleep(1)
                     print("Achievement Unlocked: 'Fishfood'")
                     print("")
-                    # ADD ACHIEVEMENT DICTIONARY
+                    fishfood_name = input("Please enter your name:" )
+                    fishfood_dict = {
+                        fishfood_name:"Fishfood"
+                    }
+                    with open("achievements.json", "w") as f:
+                        json.dump(fishfood_dict, f)
                 else:
-                    
                     sleep(1)
                     print("You make it to the island.")
                     sleep(1)
@@ -87,7 +92,12 @@ def adventure_game():
                     sleep(1)
                     print("Achievement Unlocked: 'Amelia Earhart'")
                     print("")
-                    # ADD ACHIEVEMENT DICTIOANRY
+                    amelia_name = input("Please enter your name: ")
+                    amelia_dict = {
+                        amelia_name:"Amelia Earhart"
+                    }
+                    with open("achievements.json", "w") as f:
+                        json.dump(amelia_dict, f)
             if swim_and_drown_1 == "no":
                 print("")
                 sleep(1)
@@ -124,26 +134,108 @@ def adventure_game():
             if run_or_hide_crabs == "hide":
                 print("")
                 sleep(1)
-                print("You try to hide from the crabs but they have")
+                print("You try to hide from the crabs but they find you anyways.")
+                print("You die.")
+                death_message()
     if forest_or_beach == "forest":
         print("")
         print(character_name + " chose to go to the forest.")
         disco_party = random.randint(1,10)
-        if disco_party ==5:
+        if disco_party == 5:
             print("")
             sleep(1)
-            print("ALIENS!! OH NO!!!!")
+            print("Aliens!! Oh no!")
             sleep(1)
             print("THEY ARE BLASTING YOU WITH LASERS!!!!")
             sleep(1)
             print("")
             print("You died from the alien invasion.")
+            death_message()
             sleep(1)
             print("")
             print("Achievement Unlocked: 'Lit Disco Party'")
+            print("")
+            disco_name = input("Please enter your name:" )
+            disco_dict = {
+                disco_name:"Lit Disco Party"
+            }
+            with open("achievements.json", "w") as f:
+                json.dump(disco_dict, f)
         else:
-            print("xxxxxxxxx") # ADD STUFF HERE FOR THE FOREST STORYLINE
+            print("")
+            print("You chose to go to the forest.")
+            sleep(1)
+            print("As you walk along the path, you see a dog. Do you want to try to tame it?")
+            print("Input 'yes' to tame and 'no' to leave alone.")
+            print("Hint: dog can be useful later on...")
+            dog_taming_input = input()
+            if dog_taming_input == "yes":
+                random_dog = random.randint(1,10)
+                if random_dog == 5:
+                    dog = 0
+                else: dog = 1
+            else:
+                dog = 0
+            print("")
+            sleep(1)
+            if dog == 1:
+                print("You now have a dog!")
+            if dog == 0:
+                print("You did not tame the dog.")
+            print("")
+            sleep(1)
+            print("There seems to be a villiage off to the side, " + character_name + " can see some smoke rising.")
+            print("Do you want to check it out?")
+            print("Input 'yes' to check out the villiage and 'no' to stay in the forest")
+            print("")
+            if dog == 1:
+                print("Warning: your dog seems to be very afraid of the villiage and refuses to go near it.")
+            print("")
+            villiage_choice = input()
+            if villiage_choice == "yes":
+                print("")
+                print("As you approach the villiage, you realize that a tribe of cannibals live there.")
+                cannibal_eat = random.randint(1, 6)
+                if cannibal_eat == 1:
+                    get_eaten = "roasted over a bonfire"
+                if cannibal_eat == 2:
+                    get_eaten = "sauteed with lemon"
+                if cannibal_eat == 3:
+                    get_eaten = "pickled and saved for later"
+                if cannibal_eat == 4:
+                    get_eaten = "stuffed like a turkey and shared among the villiage folk."
+                if cannibal_eat == 5:
+                    get_eaten = "turned into soup"
+                print("You get " + get_eaten)
+                death_message()
+                print("")
+                print("Achievement Unlocked: 'Yummy Dinner'")
+                print("")
+                dinner_name = input("Please enter your name: " )
+                dinner_dict = {
+                    dinner_name:"Yummy Dinner"
+                }
+                with open("achievements.json", "w") as f:
+                    json.dump(dinner_dict, f)
+            else:
+                print("")
+                print("You continue on the path.")
+                sleep(1)
+                print("In the bushes, you hear something, and " + character_name + "'s brother Microwave pops out!")
+                print("You win!")
+                print("")
+                print("Achievement Unlocked: 'Find Microwave'")
+                print("")
+                microwave_name = input("Please enter your name: " )
+                microwave_dict = {
+                    microwave_name:"Find Microwave"
+                }
+                with open("achievements.json", "w") as f:
+                    json.dump(microwave_dict, f)
+                print("")
+                print("Thank you for playing! :)")
+            
 
 
 
-#adventure_game()
+adventure_game()
