@@ -1,7 +1,3 @@
-# TO-DO:
-# Add code fo CPR, Choking, and Burns
-# Add a dictionary function which counts who completed the different sections completely
-
 def first_aid_game():
     print("")
     print("Welcome to the First Aid Test! We will now see if you are qualified.")
@@ -9,15 +5,22 @@ def first_aid_game():
     print("")
     input_aid_1 = input()
     if input_aid_1 == "cpr":
-        print("CPR") #change
+        print("")
+        print("Call 911 first")
+        print("Then, do a cycle of 30 chest compressions and 2 breaths, and repeat.")
+        print("Do chest compressions to the beat of 'staying alive', which is around 120 bpm, the necessary speed.")
     if input_aid_1 == "choking":
-        print("Choking") #change
+        print("")
+        print("If someone is choking, do the Heimlich Maneuver.")
     if input_aid_1 == "decapitation":
         print("")
         print("You can't save someone who's been decapitated, you silly goose.")
         print("")
     if input_aid_1 == "burns":
-        print("Burns") #change
+        print("")
+        print("If someone has bad burns, you need to rinse them under cool water and apply cold, wet compresses.")
+        print("Do not apply any ointments yourself")
+        print("If it's a really bad burn, or you get an infection, go to the hospital.")
     if input_aid_1 == "surprise category":
         print("")
         print("You just used the helpful skills from the other category to save someone, congrats!")
