@@ -5,7 +5,7 @@ import json
 def death_message():
     message = random.randint(1, 10)
     if message == 1:
-        print("you didnt have to die")
+        print("lol")
     if message == 2:
         print("lol")
     if message == 3:
@@ -13,15 +13,15 @@ def death_message():
     if message == 4:
         print("game over ¯\_(ツ)_/¯")
     if message == 5:
-        print("sucker")
+        print("sucker lol")
     if message == 6:
-        print("get good")
+        print("get good at the game")
     if message == 7:
         print("have a nice death")
     if message == 8:
         print("just imagine the hospital bill...")
     if message == 9:
-        print("your mother wouldn't have supported that decision.")
+        print("your mother wouldn't have supported that decision lol ")
     if message == 10:
         print("lol")
 
@@ -163,7 +163,6 @@ def adventure_game():
                 json.dump(disco_dict, f)
         else:
             print("")
-            print("You chose to go to the forest.")
             sleep(1)
             print("As you walk along the path, you see a dog. Do you want to try to tame it?")
             print("Input 'yes' to tame and 'no' to leave alone.")
@@ -238,4 +237,4 @@ def adventure_game():
 
 
 
-adventure_game()
+#adventure_game()
