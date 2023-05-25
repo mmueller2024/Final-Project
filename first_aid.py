@@ -35,7 +35,7 @@ def first_aid_game():
         else:
             print("")
             print("You failed to kill them in time. The ambulance arrived.")
-            print("After your ex recovered, they skinned you alive with a potato peeler and then ran you over with their 18 wheeler.")
+            print("After your ex recovered, they skinned you alive with a potato peeler and then ran you over with their tractor.")
             print("")
                 
 #first_aid_game()

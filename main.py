@@ -14,9 +14,9 @@ def main():
     print("- See Adventure Achievements (input 'achievements')")
     print("")
     user_input = input()
-    if user_input == "adventure": #has work to be done
+    if user_input == "adventure":
         adventure_game()
-    if user_input == "first aid": #has work to be done
+    if user_input == "first aid":
         first_aid_game()
     if user_input == "achievements":
         print("")
